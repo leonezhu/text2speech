@@ -9,10 +9,10 @@ chapters.txt
 *.epub
 *.sh
 package-lock.json
-*.onnx
-voices.json
+# *.onnx
+# voices.json
 dist
-.venv
+# .venv
 # 移除旧的配置
 # /frontend/node_modules
 /node_modules
