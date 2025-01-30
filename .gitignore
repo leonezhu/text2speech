@@ -12,9 +12,9 @@ package-lock.json
 *.onnx
 voices.json
 dist
-# .venv
+.venv
 # 移除旧的配置
-# /frontend/node_modules
+/frontend/node_modules
 /node_modules
 .vite
 # 添加新的配置（这些都是等效的，选择一个即可）
