@@ -32,7 +32,7 @@ def text_to_speech():
         
         # 生成音频文件名
         # filename 用text的前 20个字符再加时间，空格用下划线替换
-        filename = f"{text[:20].replace(' ', '_')}_{time.strftime('%Y%m%d%H%M%S')}.wav"
+        filename = f"{text[:20].replace(' ', '_')}-{time.strftime('%Y%m%d%H%M%S')}.wav"
         # filename = f"{hash(text)}.wav"
         filepath = os.path.join(AUDIO_FOLDER, filename)
         

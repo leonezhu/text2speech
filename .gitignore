@@ -8,8 +8,9 @@ chapters.txt
 *.mp3
 *.epub
 *.sh
-*.json
+package-lock.json
 *.onnx
+voices.json
 dist
 .venv
 # 移除旧的配置
