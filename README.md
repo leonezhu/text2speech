@@ -90,3 +90,8 @@ audiblez book.epub -l en-gb -v af_sky --providers CUDAExecutionProvider CPUExecu
 by [Claudio Santini](https://claudio.uk) in 2025, distributed under MIT licence.
 
 Related article: [Convert E-books into audiobooks with Kokoro](https://claudio.uk/posts/epub-to-audiobook.html)
+
+
+
+---
+在 backend 中，使用source .venv/bin/activate 进入虚拟环境
