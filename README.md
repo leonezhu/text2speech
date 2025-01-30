@@ -94,4 +94,14 @@ Related article: [Convert E-books into audiobooks with Kokoro](https://claudio.u
 
 
 ---
-在 backend 中，使用source .venv/bin/activate 进入虚拟环境
+在 backend 中，使用 
+> source .venv/bin/activate 
+进入虚拟环境, 
+然后运行
+> python app.py
+启动服务
+
+在 frontend 中，使用
+> npm run serve
+启动前端服务
+

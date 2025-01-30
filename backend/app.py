@@ -1,3 +1,4 @@
+import time
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from tts_service import TextToSpeechService
@@ -30,7 +31,9 @@ def text_to_speech():
             return jsonify({'error': 'Speed must be between 0.5 and 2.0'}), 400
         
         # 生成音频文件名
-        filename = f"{hash(text)}.wav"
+        # filename 用text的前 20个字符再加时间，空格用下划线替换
+        filename = f"{text[:20].replace(' ', '_')}_{time.strftime('%Y%m%d%H%M%S')}.wav"
+        # filename = f"{hash(text)}.wav"
         filepath = os.path.join(AUDIO_FOLDER, filename)
         
         # 转换文本为语音
